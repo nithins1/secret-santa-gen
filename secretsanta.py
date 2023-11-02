@@ -6,16 +6,14 @@ import shutil
 
 parser = argparse.ArgumentParser(description="Randomly assign Secret Santas.")
 parser.add_argument('-v', '--verbose', action='store_true', help='log additional info')
-parser.add_argument('-c', '--clear', action='store_true', help='delete outputs directory and exit')
+parser.add_argument('-c', '--clear', action='store_true', help='delete outputs directory at start')
 args = parser.parse_args()
 
 FILE_NAME = 'names.txt'
 OUTPUTS_DIR = './outputs'
 
 if args.clear:
-    print("helo")
     shutil.rmtree(OUTPUTS_DIR, ignore_errors=True)
-    exit(0)
 
 if not os.path.isfile(FILE_NAME):
     print("names.txt file not found. Please create one.")
