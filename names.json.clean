@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Alice",
+    "email": "alice@example.com",
+    "exclusions": ["Bob"]
+  },
+  {
+    "name": "Bob",
+    "email": "bob@example.com",
+    "exclusions": ["Alice"]
+  },
+  {
+    "name": "Carl",
+    "email": "carl@example.com",
+    "exclusions": []
+  },
+  {
+    "name": "David",
+    "email": "david@example.com",
+    "exclusions": []
+  },
+  {
+    "name": "Edward",
+    "email": "edward@example.com",
+    "exclusions": ["Fred", "George"]
+  },
+  {
+    "name": "Fred",
+    "email": "fred@example.com",
+    "exclusions": ["Edward", "George"]
+  },
+  {
+    "name": "George",
+    "email": "george@example.com",
+    "exclusions": ["Edward", "Fred"]
+  }
+]
